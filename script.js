@@ -8,10 +8,10 @@ console.log(firstName);
 
 let PI = 3.1415;
 
-///Variable should start with lower cases 
-///upper cases are reserved for object oriented programming
-/// name variables like this firstNamePerson etc.
-///variables are need to be descriptive 
+//Variable should start with lower cases 
+//upper cases are reserved for object oriented programming
+//name variables like this firstNamePerson etc.
+//variables are need to be descriptive 
 
 let job1 = 'Tester';
 let job2 = 'Father';
@@ -19,19 +19,20 @@ let myJob1 = 'Tester'; /// Those are more descriptive
 let myJob2 = 'Father'; ///
 
 
-///types of variables 
+//types of variables 
 let numbers = 12345;
 
-///Strings - text
+//Strings - text
 let letters = 'Lorem ipsum';
 
-/// Boolean - used for taking decisions
+// Boolean - used for taking decisions
 let jsAmazing = true;
 
-/// undefined 
+// undefined 
 let notSure;
 
-///Null - empty value
-///Symbol - not useful for now
-///BigInt - for bigger numbers 
+//Null - empty value
+//Symbol - not useful for now
+//BigInt - for bigger numbers 
 
+// multiline commenting start with /* end with */
