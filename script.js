@@ -37,4 +37,18 @@ let notSure;
 
 // multiline commenting start with /* end with */
 
+let javaScriptIsFun = true;
+
 console.log(typeof true);
+console.log(typeof javaScriptIsFun);
+console.log(typeof 23);
+console.log(typeof 'Portal');
+
+// if we want to reassign the variable we don't need to write let
+javaScriptIsFun = 'Yes!';
+console.log(typeof javaScriptIsFun);
+
+let noValue;
+console.log(noValue);
+console.log(typeof noValue);
+
