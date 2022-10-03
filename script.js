@@ -35,7 +35,7 @@ let notSure;
 //Symbol - not useful for now
 //BigInt - for bigger numbers 
 
-// multiline commenting start with /* end with */
+// multiline commenting start with /* end with * /
 
 let javaScriptIsFun = true;
 
@@ -47,8 +47,27 @@ console.log(typeof 'Portal');
 // if we want to reassign the variable we don't need to write let
 javaScriptIsFun = 'Yes!';
 console.log(typeof javaScriptIsFun);
-
+//dynamic typing
 let noValue;
 console.log(noValue);
 console.log(typeof noValue);
 
+console.log(typeof null);
+
+//const and var can't be changed in the future (mutated) and can't be empty
+
+let age = 30;
+age = 31;
+
+const birthYear = 1991;
+// birthYear = 1992;
+//const day;
+
+//var is the old way
+var job = 'surveyor';
+job = 'tester';
+
+//operators
+
+const agePawel = 2022 - 1991;
+console.log(agePawel);
