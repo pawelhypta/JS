@@ -36,3 +36,5 @@ let notSure;
 //BigInt - for bigger numbers 
 
 // multiline commenting start with /* end with */
+
+console.log(typeof true);
