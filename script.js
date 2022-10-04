@@ -69,5 +69,29 @@ job = 'tester';
 
 //operators
 
-const agePawel = 2022 - 1991;
-console.log(agePawel);
+const now = 2022;
+const agePawel = now - 1991;
+const ageAntek = now - 2020;
+console.log(agePawel, ageAntek);
+
+console.log(agePawel / 2, ageAntek * 5, 2 ** 3)
+//2 ** 3 means 2 to the power of 3 = 2 * 2 * 2 = 8
+
+const myFirstName = 'Pawel';
+const myLastName = 'Hypta';
+console.log(myFirstName + ' ' + myLastName);
+
+let x = 10 + 5; // 15
+x += 10 // x = x + 10
+x *= 4 // x = x * 4 = 100
+x++; // x = x +1 = 101;
+x--; // x = x -1 = 100;
+x--; // x = x -1 = 99
+console.log(x);
+
+// Comparison operator 
+console.log(agePawel > ageAntek);
+console.log(agePawel >= 18);
+
+const isFullAge = agePawel >= 18;
+

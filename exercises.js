@@ -1,8 +1,21 @@
-let myCountry = 'Poland';
-let countryContinent = 'Europe';
+const myCountry = 'Poland';
+const countryContinent = 'Europe';
 let myCountryPopulation = 38000000;
-let language;
+let myLanguage;
+let finlandPopulation = 6000000;
+let averageCountryPopulation = 33000000;
+myLanguage = 'Polish';
+var description = 'Portugal is in Europe, and its 11 milion people speak Portuguese';
 
 console.log(myCountry);
 console.log(countryContinent);
 console.log(myCountryPopulation);
+console.log(myCountryPopulation > finlandPopulation);
+console.log(myCountryPopulation < averageCountryPopulation);
+
+myCountryPopulation /= 2;
+myCountryPopulation /= 2;
+myCountryPopulation++;
+
+console.log(myCountryPopulation);
+
