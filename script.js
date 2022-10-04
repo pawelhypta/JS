@@ -1,4 +1,4 @@
-/*
+
 let js = "amazing";
 console.log(123 + 1 + 1 + 1);
 console.log("App version 1.0");
@@ -57,22 +57,22 @@ console.log(typeof null);
 
 //const and var can't be changed in the future (mutated) and can't be empty
 
-let age = 30;
-age = 31;
+let age1 = 30;
+age1 = 31;
 
-const birthYear = 1991;
-// birthYear = 1992;
+const birthYear1 = 1991;
+// birthYear1 = 1992;
 //const day;
 
 //var is the old way
-var job = 'surveyor';
-job = 'tester';
+var job3 = 'surveyor';
+job3 = 'tester';
 
 //operators
 
-const now = 2022;
-const agePawel = now - 1991;
-const ageAntek = now - 2020;
+const now1 = 2022;
+const agePawel = now1 - 1991;
+const ageAntek = now1 - 2020;
 console.log(agePawel, ageAntek);
 
 console.log(agePawel / 2, ageAntek * 5, 2 ** 3)
@@ -102,19 +102,19 @@ console.log(z, y);
 
 const averageAge = (agePawel + ageAntek) / 2;
 console.log(averageAge);
-*/
 
-const firstName = 'Pawel';
+
+const firstName1 = 'Pawel';
 const job = 'Software Tester';
 const birthYear = 1991;
 const now = 2022;
 
-const pawel = "I'm " + firstName + ', a ' + (now - birthYear) + ' years old ' + job + '!';
+const pawel = "I'm " + firstName1 + ', a ' + (now - birthYear) + ' years old ' + job + '!';
 
 console.log(pawel);
 
 //Templare literals
-const pawelNew = `I'm ${firstName}, a ${now - birthYear} years old ${job}!`;
+const pawelNew = `I'm ${firstName1}, a ${now - birthYear} years old ${job}!`;
 
 console.log(pawelNew);
 
@@ -128,3 +128,22 @@ console.log(`Multiple
 lines
 test.`)
 
+
+const age = 15;
+const oldEnough = age >= 18
+
+if (age >= 18) {
+    console.log('Pawel can start driving license 🚗')
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Pawel can start his driving license in ${yearsLeft} years 🫥`)
+}
+
+let century;
+
+if (birthYear <= 2000) {
+    century = 20
+} else {
+    century = 21
+}
+console.log(century);
