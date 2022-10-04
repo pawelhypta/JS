@@ -1,3 +1,4 @@
+/*
 let js = "amazing";
 console.log(123 + 1 + 1 + 1);
 console.log("App version 1.0");
@@ -101,5 +102,29 @@ console.log(z, y);
 
 const averageAge = (agePawel + ageAntek) / 2;
 console.log(averageAge);
+*/
 
+const firstName = 'Pawel';
+const job = 'Software Tester';
+const birthYear = 1991;
+const now = 2022;
+
+const pawel = "I'm " + firstName + ', a ' + (now - birthYear) + ' years old ' + job + '!';
+
+console.log(pawel);
+
+//Templare literals
+const pawelNew = `I'm ${firstName}, a ${now - birthYear} years old ${job}!`;
+
+console.log(pawelNew);
+
+// multiple lines either with \n\ or a `` backticks and press enter
+
+console.log('Multiple\n\
+lines\n\
+test.')
+
+console.log(`Multiple
+lines
+test.`)
 
