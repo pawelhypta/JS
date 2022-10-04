@@ -95,3 +95,11 @@ console.log(agePawel >= 18);
 
 const isFullAge = agePawel >= 18;
 
+let z, y;
+z = y = 25 + 15 - 30;
+console.log(z, y);
+
+const averageAge = (agePawel + ageAntek) / 2;
+console.log(averageAge);
+
+
