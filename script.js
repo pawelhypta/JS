@@ -36,7 +36,8 @@ let notSure;
 //Symbol - not useful for now
 //BigInt - for bigger numbers 
 
-// multiline commenting start with /* end with * /
+// multiline commenting start with /* end with * / 
+// multiline commenting select lines cmd + /
 
 let javaScriptIsFun = true;
 
