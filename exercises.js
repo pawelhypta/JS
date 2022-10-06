@@ -5,7 +5,7 @@ let myLanguage;
 let finlandPopulation = 6000000;
 let averageCountryPopulation = 33000000;
 myLanguage = 'Polish';
-var description = 'Portugal is in Europe, and its 11 milion people speak Portuguese';
+var description = 'Portugal is in Europe, and its 11 million people speak Portuguese';
 
 console.log(myCountry);
 console.log(countryContinent);
@@ -18,4 +18,7 @@ myCountryPopulation /= 2;
 myCountryPopulation++;
 
 console.log(myCountryPopulation);
+
+console.log(`Portugal is in ${countryContinent}, and its 11 million people speak Portuguse`)
+
 
