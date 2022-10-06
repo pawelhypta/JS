@@ -148,3 +148,25 @@ if (birthYear <= 2000) {
     century = 21
 }
 console.log(century);
+
+
+//Type Convertion
+const inpuYear = '1991';
+console.log(Number(inpuYear), inpuYear); //this is still a string
+console.log(Number(inpuYear) + 18);
+
+console.log(Number('Pawel')); //results in 'NaN' - invalid number
+
+console.log(String(1991), 1991);
+
+/// we can convert only to number, string, boolean
+
+// Type Coercion
+console.log('I am ' + 31 + ' years old.');
+console.log('23' - '10' - 3);
+console.log('23' * '2');
+console.log('23' / 2);
+
+let n = '1' + 1;
+n = n - 1;
+console.log(n);
