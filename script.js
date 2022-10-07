@@ -192,3 +192,20 @@ if (height) {
 } else {
     console.log('Height is undefined 🔴');
 }
+
+const age2 = 18;
+if (age2 === 18) console.log('You just became the adult! 🎂');
+
+if ('18' == 18) console.log('Double equal sign makes TYPE COERTION string will be converted to a number TRIPLE does not');
+
+const usersFavNumber = Number(prompt('What is your favorite number?'));
+console.log(usersFavNumber);
+console.log(typeof usersFavNumber);
+
+if (usersFavNumber === 7) {
+    console.log("User's favourite number is lucky 7️⃣!")
+} else if (usersFavNumber === 13) {
+    console.log("User's favourite number is 13!")
+} else {
+    console.log('It is not 7 nor 13 but it is cool as well for sure!')
+}
