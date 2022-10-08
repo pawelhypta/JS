@@ -203,9 +203,13 @@ console.log(usersFavNumber);
 console.log(typeof usersFavNumber);
 
 if (usersFavNumber === 7) {
-    console.log("User's favourite number is lucky 7️⃣!")
+    console.log("User's favourite number is lucky 7️⃣!");
 } else if (usersFavNumber === 13) {
-    console.log("User's favourite number is 13!")
+    console.log("User's favourite number is 13!");
 } else {
-    console.log('It is not 7 nor 13 but it is cool as well for sure!')
+    console.log('It is not 7 nor 13 but it is cool as well for sure!');
 }
+
+if (usersFavNumber !== 7) console.log('Why not 7? This is a lucky number!');
+
+// Basic logic operators 
