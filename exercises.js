@@ -48,7 +48,37 @@ if (numNeighboursNumber == 1) {
     console.log('Only 1 border!');
 } else if (numNeighboursNumber > 1) {
     console.log('More than 1 border');
+} else if (numNeighboursNumber == 0) {
+    console.log('No borders. This is an island!');
+}
+let sarahLanguage;
+let sarahCountryPopulation;
+let sarahIslandRequirement;
+
+if (myLanguage === 'English') {
+    const sarahLanguage = true;
 } else {
-    console.log('No borders');
+    const sarahLanguage = false;
+}
+console.log(sarahLanguage);
+
+if (myCountryPopulation > 550000) {
+    const sarahCountryPopulation = false;
+} else {
+    const sarahCountryPopulation = true;
+}
+console.log(sarahCountryPopulation);
+
+if (numNeighboursNumber > 1) {
+    const sarahIslandRequirement = true;
+} else {
+    const sarahIslandRequirement = false;
+}
+console.log(sarahIslandRequirement);
+
+if (sarahIslandRequirement && sarahCountryPopulation && sarahIslandRequirement) {
+    console.log('This is a country for Sarah!')
+} else {
+    console.log('This is not a country for Sarah :(')
 }
 
