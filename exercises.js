@@ -37,5 +37,18 @@ if (myCountryPopulation > averageCountryPopulation) {
 '123' < 57; // false
 5 + 6 + '4' + 9 - 4 - 2; // 1143
 
+const numNeighbours = prompt('How many neighbour countries does your country have?');
 
+const numNeighboursNumber = Number(numNeighbours);
+
+console.log(numNeighboursNumber);
+console.log(typeof numNeighboursNumber);
+
+if (numNeighboursNumber == 1) {
+    console.log('Only 1 border!');
+} else if (numNeighboursNumber > 1) {
+    console.log('More than 1 border');
+} else {
+    console.log('No borders');
+}
 
