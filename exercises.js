@@ -56,23 +56,23 @@ let sarahCountryPopulation;
 let sarahIslandRequirement;
 
 if (myLanguage === 'English') {
-    const sarahLanguage = true;
+    sarahLanguage = true;
 } else {
-    const sarahLanguage = false;
+    sarahLanguage = false;
 }
 console.log(sarahLanguage);
 
-if (myCountryPopulation > 550000) {
-    const sarahCountryPopulation = false;
+if (myCountryPopulation > 500000) {
+    sarahCountryPopulation = false;
 } else {
-    const sarahCountryPopulation = true;
+    sarahCountryPopulation = true;
 }
 console.log(sarahCountryPopulation);
 
 if (numNeighboursNumber > 1) {
-    const sarahIslandRequirement = true;
+    sarahIslandRequirement = true;
 } else {
-    const sarahIslandRequirement = false;
+    sarahIslandRequirement = false;
 }
 console.log(sarahIslandRequirement);
 
