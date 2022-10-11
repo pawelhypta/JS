@@ -239,3 +239,46 @@ if (shouldDrive && !isTired) {
 } else {
     console.log('Antek is to tired to drive a car, he should rest before driving! ')
 }
+
+///SWITCH
+const day = prompt('What day is today?')
+
+switch (day) {
+    case 'Monday':
+        console.log('Read documentation');
+        console.log('Designing test cases');
+        break;
+    case 'Tuesday':
+        console.log('Write test cases');
+        break;
+    case 'Wedenesday':
+    case 'Thursday':
+        console.log('Check tickets on DEV');
+        break;
+    case 'Friday':
+        console.log('Check tickets on STG');
+        break;
+    case 'Saturday':
+    case 'Sunday':
+        console.log('Do not think about work!');
+        break;
+    default:
+        console.log('Not a valid day!');
+}
+
+if (day === 'Monday') {
+    console.log('Read documentation');
+    console.log('Designing test cases');
+} else if (day === 'Tuesday') {
+    console.log('Write test cases');
+} else if (day === 'Wedenesday' || day === 'Thursday') {
+    console.log('Check tickets on DEV');
+} else if (day === 'Thursday') {
+    console.log('Check tickets on DEV');
+} else if (day === 'Friday') {
+    console.log('Check tickets on STG');
+} else if (day === 'Saturday' || day === 'Sunday') {
+    console.log('Do not think about work!');
+} else {
+    console.log('Not a valid day!');
+}
