@@ -82,3 +82,27 @@ if (sarahIslandRequirement && sarahCountryPopulation && sarahIslandRequirement) 
     console.log('This is not a country for Sarah :(')
 }
 
+// SWITCH
+
+const languageSpoken = prompt('What language do you speak?');
+
+switch (languageSpoken) {
+    case 'Chinese':
+    case 'Mandarin':
+        console.log('Most number of native speakers!🥇');
+        break;
+    case 'Spanish':
+        console.log('2nd place in number speakers.🥈');
+        break;
+    case 'English':
+        console.log('3rd place.🥉');
+        break;
+    case 'Hindi':
+        console.log('Number 4.🇮🇳');
+        break;
+    case 'Arabic':
+        console.log('5th most spoken language.5️⃣');
+        break;
+    default:
+        console.log('Great language too!😁')
+}
