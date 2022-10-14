@@ -300,4 +300,4 @@ if (age >= 18) {
     drink2 = 'water 💧';
 }
 console.log(drink2);
-console.log(`I like to drink ${age3 >= 18 ? 'wine 🍷' : 'water 💧'}`)
+console.log(`I like to drink ${age3 >= 18 ? 'wine 🍷' : 'water 💧'}`);
