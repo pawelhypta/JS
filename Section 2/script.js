@@ -77,4 +77,25 @@ function fruitProcessor1(lemons, watermelons) {
     return juice1;
 }
 
-console.log(fruitProcessor1(3, 7))
+console.log(fruitProcessor1(3, 7));
+
+
+const calcAge = function (birthYear) {
+    return 2022 - birthYear;
+}
+
+const yearsUntillRetirement1 = function (birthYear, firstName) {
+    const age = calcAge(birthYear);
+    const retirement1 = 65 - age;
+    if (retirement1 > 0) {
+        console.log(`${firstName} can retire in ${retirement1} years.`);
+        return retirement1;
+    } else {
+        console.log(`${firstName} should be retired for ${Math.abs(retirement1)} years already.`);
+        return -1;
+    }
+}
+
+console.log(yearsUntillRetirement1(1991, 'Paweł'));
+console.log(yearsUntillRetirement1(1951, 'Janina'));
+
