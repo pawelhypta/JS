@@ -25,5 +25,16 @@ console.log(polandPercentageOfWorld);
 console.log(czechiaPercentageOfWorld);
 console.log(germanyPercentageOfWorld);
 
+const percentageOfWorld2 = function (population) {
+    return population / worldPopulation * 100;
+}
 
+console.log(percentageOfWorld2(38));
+console.log(percentageOfWorld2(10.5));
+console.log(percentageOfWorld2(83.2));
+
+const percentageOfWorld3 = population => population / worldPopulation * 100;
+
+const arrowFunPolandPercPop = percentageOfWorld3(38);
+console.log(arrowFunPolandPercPop);
 
