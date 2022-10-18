@@ -1,0 +1,29 @@
+'use strict';
+
+function describeCountry(country, population, capitalCity) {
+    return `${country} has ${population} million people and its capital city is ${capitalCity}.`;
+}
+
+const descriptionPoland = describeCountry('Poland', 38, 'Warsaw');
+const descriptionCzechia = describeCountry('Czechia', 10.5, 'Prague');
+const descriptionGermany = describeCountry('Germany', 83.2, 'Berlin');
+
+console.log(descriptionPoland);
+console.log(descriptionCzechia);
+console.log(descriptionGermany);
+
+const worldPopulation = 7900; //in millions
+
+function percentageOfWorld1(population) {
+    return population / worldPopulation * 100;
+}
+const polandPercentageOfWorld = (percentageOfWorld1(38));
+const czechiaPercentageOfWorld = (percentageOfWorld1(10.5));
+const germanyPercentageOfWorld = (percentageOfWorld1(83.2));
+
+console.log(polandPercentageOfWorld);
+console.log(czechiaPercentageOfWorld);
+console.log(germanyPercentageOfWorld);
+
+
+
