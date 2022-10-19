@@ -38,3 +38,12 @@ const percentageOfWorld3 = population => population / worldPopulation * 100;
 const arrowFunPolandPercPop = percentageOfWorld3(38);
 console.log(arrowFunPolandPercPop);
 
+const describePopulation = function (country, population) {
+    const countryPercePopulation = percentageOfWorld1(population);
+    return `${country} has ${population} milion people, which is about ${countryPercePopulation}% of the world.`;
+}
+
+console.log(describePopulation('India', 1380));
+console.log(describePopulation('Bangladesh', 164.7));
+console.log(describePopulation('United States', 331.9));
+

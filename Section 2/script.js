@@ -99,3 +99,23 @@ const yearsUntillRetirement1 = function (birthYear, firstName) {
 console.log(yearsUntillRetirement1(1991, 'Paweł'));
 console.log(yearsUntillRetirement1(1951, 'Janina'));
 
+//Arrays
+
+const friend1 = 'Mark';
+const friend2 = 'Rasim';
+const friend3 = 'Nejc';
+
+const portalTeam = ['Mark', 'Rasim', 'Nejc'];
+console.log(portalTeam);
+
+const years = new Array(1991, 1992, 1995, 2020);
+
+console.log(portalTeam[0]);
+console.log(portalTeam[2]);
+
+console.log(portalTeam.length);
+console.log(portalTeam[portalTeam.length - 1]);
+
+portalTeam[2] = 'Luka';
+console.log(portalTeam[2]);
+
