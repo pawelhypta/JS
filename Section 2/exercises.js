@@ -47,3 +47,15 @@ console.log(describePopulation('India', 1380));
 console.log(describePopulation('Bangladesh', 164.7));
 console.log(describePopulation('United States', 331.9));
 
+// Arrays
+
+const populations = [1380, 164.7, 331.9, 38];
+
+console.log(populations.length === 4);
+
+const percentages = [percentageOfWorld1(populations[0]),
+percentageOfWorld1(populations[1]),
+percentageOfWorld1(populations[2]),
+percentageOfWorld1(populations[3])];
+
+console.log(percentages);

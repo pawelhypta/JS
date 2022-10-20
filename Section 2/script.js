@@ -119,3 +119,21 @@ console.log(portalTeam[portalTeam.length - 1]);
 portalTeam[2] = 'Luka';
 console.log(portalTeam[2]);
 
+const pawel = ['Pawel', 'Hypta', 2022 - 1991];
+
+console.log(`My name is ${pawel[0]} ${pawel[1]} and I'm ${pawel[2]} years old.`);
+
+
+const years1 = [1991, 1971, 1960, 1951];
+
+const age4 = calcAge(years1[0]);
+const age5 = calcAge(years1[1]);
+const age6 = calcAge(years1[3]);
+
+console.log(age4, age5, age6);
+
+const ages = [calcAge(years1[0]), calcAge(years1[1]), calcAge(years1[3])];
+
+console.log(ages);
+
+const friends = ['Tom', 'Jack', 'Martin'];
