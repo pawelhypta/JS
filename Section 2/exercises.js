@@ -59,3 +59,15 @@ percentageOfWorld1(populations[2]),
 percentageOfWorld1(populations[3])];
 
 console.log(percentages);
+
+//Basic array operations
+
+const neighbours = ['Austria', 'Czechia', 'Netherlands', 'Poland', 'France', 'Switzerland', 'Belgium', 'Luxemburg', 'Denmark'];
+
+neighbours[9] = 'Utopia';
+console.log(neighbours);
+
+neighbours[9] = null
+console.log(neighbours);
+
+
