@@ -47,3 +47,33 @@ checkWinner(1111, 1);
 checkWinner(1000, 500);
 checkWinner(500, 1000);
 checkWinner(10, 21);
+
+//Coding challenge #2
+
+let tip;
+
+function calcTip(bill) {
+    if (bill < 50 || bill > 300) {
+        return tip = bill * 0.2;
+    } else {
+        return tip = bill * 0.15;
+    }
+}
+
+console.log(calcTip(100));
+
+const bills = [125, 555, 44];
+
+let tips;
+
+const tip1 = calcTip(bills[0]);
+const tip2 = calcTip(bills[1]);
+const tip3 = calcTip(bills[2]);
+tips.push(tip1);
+tips.push(tip2);
+tips.push(tip3);
+
+console.log(tips);
+
+
+

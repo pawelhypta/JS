@@ -64,10 +64,20 @@ console.log(percentages);
 
 const neighbours = ['Austria', 'Czechia', 'Netherlands', 'Poland', 'France', 'Switzerland', 'Belgium', 'Luxemburg', 'Denmark'];
 
-neighbours[9] = 'Utopia';
+neighbours.push('Utopia');
 console.log(neighbours);
 
-neighbours[9] = null
+neighbours.pop();
 console.log(neighbours);
+
+if (!neighbours.includes('Germany')) {
+    console.log('Probably not the Central European country.')
+}
+
+const polandIndex = neighbours.indexOf('Poland');
+console.log(polandIndex)
+neighbours[polandIndex] = 'Republic of Poland';
+console.log(neighbours);
+
 
 
