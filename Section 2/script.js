@@ -159,3 +159,24 @@ console.log(friends.includes('Many'));
 if (friends.includes('Peter')) {
     console.log('You have a friend called Peter');
 }
+
+//Objects
+
+const pawelArray = [
+    'Pawel',
+    'Hypta',
+    2022 - 1991,
+    'tester',
+    ['Tim', 'Kayle', 'Cartman']
+];
+
+const pawelHypta = {
+    firstName: 'Pawel',
+    lastName: 'Hypta',
+    age: 2022 - 1991,
+    profession: 'tester',
+    friends: ['Tim', 'Kayle', 'Cartman']
+};
+
+
+
