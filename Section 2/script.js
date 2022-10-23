@@ -177,6 +177,24 @@ const pawelHypta = {
     profession: 'tester',
     friends: ['Tim', 'Kayle', 'Cartman']
 };
+console.log(pawelHypta);
+//Read data from objects
 
+//Dot notation
+
+console.log(pawelHypta.lastName);
+console.log(pawelHypta.friends[1]);
+
+//Bracket notation
+console.log(pawelHypta['lastName']);
+
+const nameKey = 'Name';
+
+console.log(pawelHypta['first' + nameKey]);
+console.log(pawelHypta['last' + nameKey]);
+
+const interestedIn = prompt('What do you want to know about Pawel? Choose between firstName, lastName, age, profession, friends');
+
+console.log(pawelHypta[interestedIn]);
 
 

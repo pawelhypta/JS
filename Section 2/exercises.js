@@ -79,5 +79,13 @@ console.log(polandIndex)
 neighbours[polandIndex] = 'Republic of Poland';
 console.log(neighbours);
 
+const myCountry = {
+    country: 'Poland',
+    capital: 'Warsaw',
+    language: 'Polish',
+    population: 38000000,
+    neighbours: ['Germany', 'Czechia', 'Slovakia', 'Ukraine', 'Belarus', 'Russia']
+}
+
 
 
