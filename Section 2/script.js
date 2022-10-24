@@ -195,6 +195,19 @@ console.log(pawelHypta['last' + nameKey]);
 
 const interestedIn = prompt('What do you want to know about Pawel? Choose between firstName, lastName, age, profession, friends');
 
-console.log(pawelHypta[interestedIn]);
+
+if (pawelHypta[interestedIn]) {
+    console.log(pawelHypta[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, profession, friends');
+}
+
+pawelHypta.location = 'Poland';
+pawelHypta['twitter'] = 'No twitter';
+
+console.log(pawelHypta);
+
+//Challenge
+console.log(`${pawelHypta.firstName} has ${pawelHypta.friends.length} friends, and his best friend is ${pawelHypta.friends[0]}`);
 
 
