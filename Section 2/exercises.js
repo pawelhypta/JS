@@ -87,5 +87,15 @@ const myCountry = {
     neighbours: ['Germany', 'Czechia', 'Slovakia', 'Ukraine', 'Belarus', 'Russia']
 }
 
+//Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.
+
+console.log(`${myCountry.country} has ${myCountry.population / 1000000} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neihgbouring countries and a capital called ${myCountry.capital}.`)
+
+myCountry.population += 2000000;
+console.log(myCountry.population);
+
+myCountry['population'] -= 2000000;
+console.log(myCountry.population);
+
 
 
