@@ -72,5 +72,28 @@ bills[1] + tips[1],
 bills[0] + tips[2]];
 console.log(total);
 
+// Coding challenge #3
+
+const mark = {
+    firstName: 'Mark',
+    lastName: 'Miller',
+    bodyMass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        return this.BMI = this.bodyMass / (this.height ** 2);
+    }
+}
+console.log(mark.calcBMI());
+
+const john = {
+    firstName: 'John',
+    lastName: 'Smith',
+    bodyMass: 92,
+    height: 1.95,
+    calcBMI: function () {
+        return this.BMI = this.bodyMass / (this.height ** 2);
+    }
+}
+console.log(john.calcBMI());
 
 
