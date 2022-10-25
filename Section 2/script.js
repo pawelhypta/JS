@@ -119,9 +119,9 @@ console.log(portalTeam[portalTeam.length - 1]);
 portalTeam[2] = 'Luka';
 console.log(portalTeam[2]);
 
-const pawel = ['Pawel', 'Hypta', 2022 - 1991];
+const pawel1 = ['Pawel', 'Hypta', 2022 - 1991];
 
-console.log(`My name is ${pawel[0]} ${pawel[1]} and I'm ${pawel[2]} years old.`);
+console.log(`My name is ${pawel1[0]} ${pawel1[1]} and I'm ${pawel1[2]} years old.`);
 
 
 const years1 = [1991, 1971, 1960, 1951];
@@ -193,14 +193,14 @@ const nameKey = 'Name';
 console.log(pawelHypta['first' + nameKey]);
 console.log(pawelHypta['last' + nameKey]);
 
-const interestedIn = prompt('What do you want to know about Pawel? Choose between firstName, lastName, age, profession, friends');
+//const interestedIn = prompt('What do you want to know about Pawel? Choose between firstName, lastName, age, profession, friends');
 
 
-if (pawelHypta[interestedIn]) {
-    console.log(pawelHypta[interestedIn]);
-} else {
-    console.log('Wrong request! Choose between firstName, lastName, age, profession, friends');
-}
+// //if (pawelHypta[interestedIn]) {
+//     console.log(pawelHypta[interestedIn]);
+// } else {
+//     console.log('Wrong request! Choose between firstName, lastName, age, profession, friends');
+// }
 
 pawelHypta.location = 'Poland';
 pawelHypta['twitter'] = 'No twitter';
@@ -210,4 +210,42 @@ console.log(pawelHypta);
 //Challenge
 console.log(`${pawelHypta.firstName} has ${pawelHypta.friends.length} friends, and his best friend is ${pawelHypta.friends[0]}`);
 
+//Object methods
+//Function attached to the object is called a METHOD
+const pawel = {
+    firstName: 'Pawel',
+    lastName: 'Hypta',
+    birthYear: 1991,
+    profession: 'tester',
+    friends: ['Tim', 'Kayle', 'Cartman'],
+    hasDriversLicense: true,
+
+    // calcAge: function (birthYear) {
+    //     return 2022 - birthYear;
+    // }
+
+    // calcAge: function () {
+    //     console.log(this);
+    //     return 2022 - this.birthYear;
+    // }
+
+    calcAge: function () {
+        this.age = 2022 - this.birthYear;
+        return this.age;
+    },
+
+    addSummary: function () {
+        return `${this.firstName} is a ${this.calcAge()}-years old ${this.profession}, and he has ${this.hasDriversLicense ? 'a' : 'no'} driver's license`
+    }
+};
+
+// console.log(pawel.calcAge(pawel.birthYear));
+// console.log(pawel.calcAge(1991));
+// console.log(pawel['calcAge'](1991));
+console.log(pawel.calcAge());
+console.log(pawel.age);
+
+//challenge "Pawel is a 31-years old teacher, and he has a/no drivers license"
+
+console.log(pawel.addSummary());
 
