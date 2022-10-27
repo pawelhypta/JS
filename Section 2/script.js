@@ -167,7 +167,8 @@ const pawelArray = [
     'Hypta',
     2022 - 1991,
     'tester',
-    ['Tim', 'Kayle', 'Cartman']
+    ['Tim', 'Kayle', 'Cartman'],
+    true
 ];
 
 const pawelHypta = {
@@ -266,5 +267,19 @@ console.log('Lifting weights repetition 10 🏋️‍♀️');
 for (let rep = 1; rep <= 10; rep++) {
     console.log(`Lifting weights repetition ${rep} 🏋️‍♀️`);
 }
+
+const types = [];
+const typesPushed = [];
+for (let i = 0; i < pawelArray.length; i++) {
+    console.log(pawelArray[i], typeof pawelArray[i]);
+
+    //Filling types array
+    types[i] = typeof pawelArray[i];
+    typesPushed.push(typeof pawelArray[i]);
+}
+
+console.log(types);
+console.log(typesPushed);
+
 
 
