@@ -281,5 +281,40 @@ for (let i = 0; i < pawelArray.length; i++) {
 console.log(types);
 console.log(typesPushed);
 
+const birthYears = [1991, 1954, 1962, 1998];
+const ages1 = [];
+for (let i = 0; i < birthYears.length; i++) {
+    ages1.push(2022 - birthYears[i]);
+}
+console.log(ages1);
 
+//Continue and Break
+console.log('---Only STRINGS----')
+for (let i = 0; i < pawelArray.length; i++) {
+    if (typeof pawelArray[i] !== 'string') continue;
 
+    console.log(pawelArray[i], typeof pawelArray[i]);
+}
+
+console.log('---Break Number----')
+for (let i = 0; i < pawelArray.length; i++) {
+    if (typeof pawelArray[i] === 'number') break;
+
+    console.log(pawelArray[i], typeof pawelArray[i]);
+}
+
+//Backward looping
+const backwardPawelArray = [];
+for (let i = pawelArray.length - 1; i >= 0; i--) {
+    backwardPawelArray.push(pawelArray[i]);
+}
+console.log(backwardPawelArray);
+
+//Loop inside a loop
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`------Starting exersise ${exercise}`);
+
+    for (let repetition = 1; repetition < 5; repetition++) {
+        console.log(`Lifting weight repetition number  ${repetition}`);
+    }
+}
