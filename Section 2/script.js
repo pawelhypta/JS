@@ -318,3 +318,19 @@ for (let exercise = 1; exercise < 4; exercise++) {
         console.log(`Lifting weight repetition number  ${repetition}`);
     }
 }
+
+//While loop
+let rep1 = 1;
+while (rep1 <= 10) {
+    console.log(`Lifting weights repetition ${rep1}🏋️‍♀️ `)
+    rep1++
+}
+
+let diceRoll = Math.trunc(Math.random() * 6) + 1;
+
+
+while (diceRoll !== 6) {
+    console.log(`You rolled a ${diceRoll}`);
+    diceRoll = Math.trunc(Math.random() * 6) + 1;
+    if (diceRoll === 6) console.log('You rolled six. The loop will finish.')
+}
