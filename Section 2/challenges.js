@@ -107,6 +107,19 @@ if (john.bmi > mark.bmi) {
 
 const bills4 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 
+let tips4 = [];
+let total4 = [];
 
+for (i = 0; i < bills4.length - 1; i++) {
+    tips4[i] = calcTip(bills4[i])
+    total4[i] = bills4[i] + tips4[i];
+}
 
+console.log(tips4);
+console.log(total4);
 
+let sum = 0;
+for (i = 0; i < bills4.length - 1; i++) {
+    sum + total4[i];
+}
+console.log(sum);
