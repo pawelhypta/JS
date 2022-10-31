@@ -110,7 +110,7 @@ const bills4 = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let tips4 = [];
 let total4 = [];
 
-for (i = 0; i < bills4.length - 1; i++) {
+for (i = 0; i < bills4.length; i++) {
     tips4[i] = calcTip(bills4[i])
     total4[i] = bills4[i] + tips4[i];
 }
@@ -118,8 +118,15 @@ for (i = 0; i < bills4.length - 1; i++) {
 console.log(tips4);
 console.log(total4);
 
-let sum = 0;
-for (i = 0; i < bills4.length - 1; i++) {
-    sum + total4[i];
+const calcAverage = function (arr) {
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum / arr.length;
 }
-console.log(sum);
+
+console.log(calcAverage([1, 1, 1]));
+console.log(calcAverage(bills4));
+console.log(calcAverage(tips4));
+console.log(calcAverage(total4));
