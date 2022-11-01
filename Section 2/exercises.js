@@ -84,9 +84,18 @@ const myCountry = {
     capital: 'Warsaw',
     language: 'Polish',
     population: 38000000,
-    neighbours: ['Germany', 'Czechia', 'Slovakia', 'Ukraine', 'Belarus', 'Russia']
+    neighbours: ['Germany', 'Czechia', 'Slovakia', 'Ukraine', 'Belarus', 'Russia'],
+    describe: function () {
+        return `${this.country} has ${this.population / 1000000} million ${this.language}-speaking people, ${this.neighbours.length} neihgbouring countries and a capital called ${this.capital}.`
+    },
+    checkIsIsland: function () {
+        this.isIsland = this.neighbours.length === 0 ? true : false;
+    }
 }
-
+myCountry.describe();
+console.log(myCountry.describe());
+myCountry.checkIsIsland();
+console.log(myCountry);
 //Finland has 6 million finnish-speaking people, 3 neighbouring countries and a capital called Helsinki.
 
 console.log(`${myCountry.country} has ${myCountry.population / 1000000} million ${myCountry.language}-speaking people, ${myCountry.neighbours.length} neihgbouring countries and a capital called ${myCountry.capital}.`)
@@ -96,6 +105,42 @@ console.log(myCountry.population);
 
 myCountry['population'] -= 2000000;
 console.log(myCountry.population);
+
+for (let i = 0; i <= 50; i++) {
+    console.log(`Voter number ${i} is currently voting`);
+}
+
+//function percentageOfWorld1(population) {
+//   return population / worldPopulation * 100;
+//}
+//const populations = [1380, 164.7, 331.9, 38];
+let percentages2 = [];
+for (let i = 0; i < populations.length; i++) {
+    const perc = percentageOfWorld1(populations[i]);
+    percentages2.push(perc);
+}
+console.log(percentages2,
+    percentages);
+
+const listOfNeighbours = [
+    ['Canada', 'Mexico'],
+    ['Spain'],
+    ['Norway', 'Sweden', 'Russia']];
+
+for (let i = 0; i < listOfNeighbours.length; i++)
+    for (let y = 0; y < listOfNeighbours[i].length; y++)
+        console.log(`Neighbour: ${listOfNeighbours[i][y]}`);
+
+let percentages3 = [];
+let i = 0;
+while (i < populations.length) {
+    const perc = percentageOfWorld1(populations[i]);
+    percentages3.push(perc);
+    i++;
+}
+console.log(percentages3,
+    percentages2,
+    percentages);
 
 
 
