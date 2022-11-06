@@ -1,11 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body {
   background-color: rgb(251, 251, 198);
   font-family: Arial;
   font-size: 20px;
+  padding: 75px;
 }
 
 h1 {
   font-size: 40px;
+  margin-bottom: 25px;
+}
+h2 {
+  margin-bottom: 25px;
+  text-align: center;
+}
+p {
+  margin-bottom: 25px;
 }
 .first {
   color: red;
@@ -14,4 +28,17 @@ h1 {
 #your-name {
   background-color: rgb(215, 187, 152);
   border: 5px solid #444;
+  width: 400px;
+  padding: 25px;
+}
+input,
+button {
+  padding: 10px;
+  font-size: 16px;
+}
+#troll-face {
+  width: 200px;
+}
+#your-name h2 {
+  color: olivedrab;
 }
