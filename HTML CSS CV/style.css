@@ -18,36 +18,38 @@ header {
   border-radius: 50%;
   width: 200px;
 }
+.aboutMe {
+  top: 100px;
+  left: 300px;
+  position: absolute;
+}
 #phone-icon {
   width: 30px;
-  top: 470px;
+  top: 420px;
   position: absolute;
 }
 .phoneNumber {
   left: 90px;
-  top: 460px;
+  top: 410px;
   position: absolute;
 }
 #email {
   left: 50px;
-  top: 520px;
+  top: 480px;
   position: absolute;
   width: 30px;
 }
 .email {
   left: 90px;
-  top: 510px;
+  top: 470px;
   position: absolute;
 }
 #linkedin-logo {
   width: 100px;
-  top: 580px;
+  top: 540px;
   position: absolute;
 }
 
-.contact {
-  font-size: 40px;
-}
 .vl {
   border-left: solid;
   height: 500px;
