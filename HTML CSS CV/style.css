@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap");
+
+body {
+  height: 100vh;
+  background: linear-gradient(to top left, #abe1ee, #316997);
+  font-family: "Lobster Two", cursive;
+  color: #eee;
+  background-color: #222;
+  margin: 50px;
+}
+
+header {
+  font-size: 50px;
+  text-align: center;
+}
+
+#avatar {
+  border-radius: 50%;
+  width: 200px;
+}
+#phone-icon {
+  width: 30px;
+  top: 470px;
+  position: absolute;
+}
+.phoneNumber {
+  left: 90px;
+  top: 460px;
+  position: absolute;
+}
+#email {
+  left: 50px;
+  top: 520px;
+  position: absolute;
+  width: 30px;
+}
+.email {
+  left: 90px;
+  top: 510px;
+  position: absolute;
+}
+#linkedin-logo {
+  width: 100px;
+  top: 580px;
+  position: absolute;
+}
+
+.contact {
+  font-size: 40px;
+}
+.vl {
+  border-left: solid;
+  height: 500px;
+  left: 300px;
+  position: absolute;
+}
