@@ -28,3 +28,11 @@ function calcAge(birthYear) {
 
 const firstName = 'Pawel';
 calcAge(1991);
+
+//Hoisting
+
+console.log(me);
+console.log(job);
+
+let job = 'TL';
+var me = 'Pawel';
