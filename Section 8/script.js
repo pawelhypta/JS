@@ -32,7 +32,19 @@ calcAge(1991);
 //Hoisting
 
 console.log(me);
-console.log(job);
+//console.log(job);
 
 let job = 'TL';
 var me = 'Pawel';
+const year = 1991;
+
+//Functions
+function addDecl(a, b) {
+  return a + b;
+}
+
+const addExpr = function (a, b) {
+  return a + b;
+};
+
+const addArrow = (a, b) => a + b;
