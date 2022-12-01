@@ -39,6 +39,10 @@ var me = 'Pawel';
 const year = 1991;
 
 //Functions
+console.log(addDecl(2, 3));
+// console.log(addExpr(2, 3));
+// console.log(addArrow(2, 3));
+
 function addDecl(a, b) {
   return a + b;
 }
@@ -48,3 +52,43 @@ const addExpr = function (a, b) {
 };
 
 const addArrow = (a, b) => a + b;
+
+if (!numProducts) deleteShoppingCart();
+
+var numProducts = 10;
+
+function deleteShoppingCart() {
+  console.log('All products deleted');
+}
+
+var x = 1;
+let y = 2;
+const z = 3;
+
+console.log(x === window.x);
+console.log(y === window.y);
+console.log(z === window.z);
+
+//This keyword
+console.log(this);
+
+const calcAge1 = function (birthYear) {
+  console.log(2022 - birthYear);
+  console.log(this);
+};
+calcAge1(1991);
+
+const calcAgeArr = birthYear => {
+  console.log(2022 - birthYear);
+  console.log(this);
+};
+calcAgeArr(1991);
+
+const pawel = {
+  birthYear: 1991,
+  calcAge1: function () {
+    console.log(this);
+    console.log(2022 - this.birthYear);
+  },
+};
+pawel.calcAge1();
