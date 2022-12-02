@@ -84,11 +84,34 @@ const calcAgeArr = birthYear => {
 };
 calcAgeArr(1991);
 
+//method borrowing
 const pawel = {
-  birthYear: 1991,
+  year: 1991,
   calcAge1: function () {
     console.log(this);
-    console.log(2022 - this.birthYear);
+    console.log(2022 - this.year);
   },
 };
 pawel.calcAge1();
+
+const marian = {
+  year: 2017,
+};
+
+marian.calcAge1 = pawel.calcAge1;
+marian.calcAge1();
+
+const f = pawel.calcAge1;
+//f(); // this will be undefined as we are just borrowing the function
+
+const pawel1 = {
+  firstName: 'Paweł',
+  year: 1991,
+  calcAge1: function () {
+    console.log(this);
+    console.log(2022 - this.year);
+  },
+  greet: () => console.log(`Hey ${this.firstName}`),
+};
+
+pawel.greet();
