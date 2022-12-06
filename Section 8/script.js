@@ -102,16 +102,26 @@ marian.calcAge1 = pawel.calcAge1;
 marian.calcAge1();
 
 const f = pawel.calcAge1;
-//f(); // this will be undefined as we are just borrowing the function
+// f(); // this will be undefined as we are just borrowing the function
+// var firstName1 = 'Marian';
 
 const pawel1 = {
-  firstName: 'Paweł',
+  firstName1: 'Paweł',
   year: 1991,
   calcAge1: function () {
     console.log(this);
     console.log(2022 - this.year);
+
+    const isMillenial = function () {
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
   },
-  greet: () => console.log(`Hey ${this.firstName}`),
+  greet: function () {
+    console.log(this);
+    console.log(`Hey ${this.firstName1}`);
+  },
 };
 
-pawel.greet();
+pawel1.greet();
+pawel1.calcAge1();
