@@ -48,10 +48,17 @@ function addDecl(a, b) {
 }
 
 const addExpr = function (a, b) {
+  console.log(arguments);
   return a + b;
 };
 
-const addArrow = (a, b) => a + b;
+addExpr(2, 5);
+
+const addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+// addArrow(2, 4, 6);  Arguments are only aviliable for regular functions
 
 if (!numProducts) deleteShoppingCart();
 
@@ -112,8 +119,10 @@ const pawel1 = {
     console.log(this);
     console.log(2022 - this.year);
 
+    const self = this;
+
     const isMillenial = function () {
-      console.log(this.year >= 1981 && this.year <= 1996);
+      console.log(self.year >= 1981 && self.year <= 1996);
     };
     isMillenial();
   },
@@ -125,3 +134,23 @@ const pawel1 = {
 
 pawel1.greet();
 pawel1.calcAge1();
+
+//Primitives vs Objects
+
+let age = 30;
+let oldAge = age;
+age = 31;
+
+console.log(age);
+console.log(oldAge);
+
+const me1 = {
+  name: 'Pawel',
+  age: 31,
+};
+
+const friend = me1;
+friend.age = 35;
+
+console.log(friend.age);
+console.log(me1.age);
