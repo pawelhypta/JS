@@ -155,10 +155,14 @@ friend.age = 35;
 console.log(friend.age);
 console.log(me1.age);
 
+//Primitive types
+
 let lastName = 'Williams';
 let oldLastName = lastName;
 lastName = 'Davis';
 console.log(lastName, oldLastName);
+
+//Reference types
 
 const jessica = {
   firstName: 'Jessica',
@@ -171,3 +175,22 @@ marriedJessica.lastName = 'Davis';
 
 console.log('Before marriage', jessica);
 console.log('After marriage', marriedJessica);
+
+// Copying objects
+const jessica2 = {
+  firstName: 'Jessica',
+  lastName: 'Williams',
+  age: 27,
+  family: ['Bob', 'Mark'],
+};
+
+const jessicaCopy = Object.assign({}, jessica2);
+
+// Shallow copy not a deep clone, we can do it for first level. Object.assign will not work in the object inside of object
+
+jessicaCopy.lastName = 'Davis';
+jessicaCopy.family.push('Louis');
+jessicaCopy.family.push('Steven');
+
+console.log('Before marriage', jessica2);
+console.log('After marriage', jessicaCopy);
