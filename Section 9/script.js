@@ -87,6 +87,17 @@ console.log(badNewArr);
 
 const newArr = [1, 2, ...arr];
 console.log(newArr);
+console.log(...newArr);
+
+const newMenu = [...restaurant.mainMenu, 'Gnocchi'];
+console.log(newMenu);
+
+//Spread opeator use cases
+const mainMenuCopy = [...restaurant.mainMenu];
+
+//join two arrays =
+const menuCombined = [...restaurant.starterMenu, ...restaurant.mainMenu];
+console.log(menuCombined);
 /*
 //Array destrctioning = method of breaking down/unpacking arrays into variables
 
