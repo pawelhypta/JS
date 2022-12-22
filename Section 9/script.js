@@ -39,6 +39,11 @@ const restaurant = {
       `Order  recived! ${this.starterMenu[starterIndex]} and ${this.mainMenu[mainIndex]} will be delivered to ${address} at ${time}`
     );
   },
+  orderPasta: function (ing1, ing2, ing3) {
+    console.log(
+      `Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`
+    );
+  },
 };
 
 restaurant.orderDelivery({
@@ -98,6 +103,31 @@ const mainMenuCopy = [...restaurant.mainMenu];
 //join two arrays =
 const menuCombined = [...restaurant.starterMenu, ...restaurant.mainMenu];
 console.log(menuCombined);
+
+// Iterables: strings, arrays, maps, sets. NOT objects
+
+const str = 'Paweł';
+const letters = [...str, ' ', 's.'];
+console.log(letters);
+console.log(...str);
+// console.log(`${...str} Hypta`);
+
+// const ingridients = [
+//   prompt("Let's make pasta! Ingridient 1?"),
+//   prompt("Let's make pasta! Ingridient 2?"),
+//   prompt("Let's make pasta! Ingridient 3?"),
+// ];
+
+// restaurant.orderPasta(...ingridients);
+
+//Object
+const newRestaurant = { foundedIn: 2022, ...restaurant, founder: 'PH' };
+console.log(newRestaurant);
+
+const restaurantCopy = { ...restaurant };
+restaurantCopy.name = 'Ristorante Wrocław';
+console.log(restaurantCopy.name);
+console.log(restaurant.name);
 /*
 //Array destrctioning = method of breaking down/unpacking arrays into variables
 
