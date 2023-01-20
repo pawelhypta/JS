@@ -46,6 +46,28 @@ const restaurant = {
   },
 };
 
+// 1) Destructuring
+//SPREAD - because on RIGHT side of =
+const arr = [1, 2, ...[3, 4]];
+
+//REST - because on LEFT side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+
+console.log(pizza, risotto, otherFood);
+
+// Rest pattern on objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+// 2) Functions
+
+/*
 restaurant.orderDelivery({
   time: '22:30',
   address: 'Via del Sole, 21',
@@ -57,6 +79,7 @@ restaurant.orderDelivery({
   address: 'Via del Sole, 21',
   starterIndex: 2,
 });
+
 
 const { name, openingHours, categories } = restaurant;
 console.log(name, openingHours, categories);
@@ -110,6 +133,7 @@ const str = 'Paweł';
 const letters = [...str, ' ', 's.'];
 console.log(letters);
 console.log(...str);
+
 // console.log(`${...str} Hypta`);
 
 // const ingridients = [
@@ -128,6 +152,7 @@ const restaurantCopy = { ...restaurant };
 restaurantCopy.name = 'Ristorante Wrocław';
 console.log(restaurantCopy.name);
 console.log(restaurant.name);
+
 /*
 //Array destrctioning = method of breaking down/unpacking arrays into variables
 
