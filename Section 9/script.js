@@ -44,6 +44,11 @@ const restaurant = {
       `Here is your delicious pasta with ${ing1}, ${ing2} and ${ing3}`
     );
   },
+
+  orderPizza: function (mainIng, ...otherIng) {
+    console.log(mainIng);
+    console.log(otherIng);
+  },
 };
 
 // 1) Destructuring
@@ -66,7 +71,21 @@ const { sat, ...weekdays } = restaurant.openingHours;
 console.log(weekdays);
 
 // 2) Functions
+const add = function (...numbers) {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+add(2, 3);
+add(5, 12, 121, 341);
+add(4, 1, 31, 311);
 
+const x = [23, 5, 7];
+add(...x);
+
+restaurant.orderPizza('Beef', 'cheese', 'tomatos', 'chives');
+
+restaurant.orderPizza('Tomato sauce');
 /*
 restaurant.orderDelivery({
   time: '22:30',
