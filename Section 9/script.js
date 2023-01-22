@@ -50,7 +50,22 @@ const restaurant = {
     console.log(otherIng);
   },
 };
+console.log('-----OR-----');
+//Logical operators can USE data of any type and also RETURN or short-circuting
 
+console.log(3 || 'Paweł');
+console.log('' || 'Paweł');
+console.log(undefined || null);
+console.log(false || true);
+console.log(undefined || 0 || '' || 'Hello world!' || null);
+
+//restaurant.numGuests = 23;
+const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
+console.log(guests1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+/*
 // 1) Destructuring
 //SPREAD - because on RIGHT side of =
 const arr = [1, 2, ...[3, 4]];
