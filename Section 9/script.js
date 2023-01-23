@@ -59,12 +59,19 @@ console.log(undefined || null);
 console.log(false || true);
 console.log(undefined || 0 || '' || 'Hello world!' || null);
 
-//restaurant.numGuests = 23;
+restaurant.numGuests = 0;
 const guests1 = restaurant.numGuests ? restaurant.numGuests : 10;
 console.log(guests1);
 
 const guests2 = restaurant.numGuests || 10;
 console.log(guests2);
+
+console.log('---- AND ----');
+console.log(0 && 'Paweł');
+// AND operator is exacly the opposite of or as it thorws the first falsy value
+//If you have only truthy values JS will continue and throw the last value
+console.log(10 && 'Paweł');
+
 /*
 // 1) Destructuring
 //SPREAD - because on RIGHT side of =
