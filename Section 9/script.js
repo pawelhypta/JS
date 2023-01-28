@@ -50,7 +50,29 @@ const restaurant = {
     console.log(otherIng);
   },
 };
-console.log('-----OR-----');
+
+const rest1 = {
+  name: 'Żabka',
+  numGuests: 20,
+};
+
+const rest2 = {
+  name: 'Biedra',
+  owner: 'Olek Kwolek',
+};
+rest1.numGuests = rest1.numGuests || 10;
+rest2.numGuests = rest2.numGuests || 10;
+console.log(rest1);
+console.log(rest2);
+/*
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+//Nullish values: null and undefined (NOT ZERO or ' ')
+const guestCorrect = restaurant.numGuests ?? 10;
+console.log(guestCorrect);
+/*console.log('-----OR-----');
 //Logical operators can USE data of any type and also RETURN or short-circuting
 
 console.log(3 || 'Paweł');
@@ -71,7 +93,15 @@ console.log(0 && 'Paweł');
 // AND operator is exacly the opposite of or as it thorws the first falsy value
 //If you have only truthy values JS will continue and throw the last value
 console.log(10 && 'Paweł');
+console.log('Hello' && 1312 && null && 'Paweł');
 
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('mushroom', 'spinach');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushroom', 'spinach');
+
+// Nullish coalescing operator
 /*
 // 1) Destructuring
 //SPREAD - because on RIGHT side of =
