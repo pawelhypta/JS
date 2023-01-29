@@ -53,15 +53,29 @@ const restaurant = {
 
 const rest1 = {
   name: 'Żabka',
-  numGuests: 20,
+  numGuests: 0,
 };
 
 const rest2 = {
   name: 'Biedra',
   owner: 'Olek Kwolek',
 };
-rest1.numGuests = rest1.numGuests || 10;
-rest2.numGuests = rest2.numGuests || 10;
+//OR assigement operator
+// rest1.numGuests = rest1.numGuests || 10;
+// rest2.numGuests = rest2.numGuests || 10;
+// rest1.numGuests ||= 10;
+// rest2.numGuests ||= 10;
+
+// nullish assigment operator (null or undefined )
+rest1.numGuests ??= 10;
+rest2.numGuests ??= 10;
+
+//AND assigment operator
+// rest1.owner = rest1.owner && '<Annonymous>';
+// rest2.owner = rest2.owner && '<Annonymous>';
+
+rest1.owner &&= '<Annonymous>';
+rest2.owner &&= '<Annonymous>';
 console.log(rest1);
 console.log(rest2);
 /*
