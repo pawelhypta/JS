@@ -38,8 +38,16 @@ const game = {
     team2: 6.5,
   },
 };
+//1.
+const [players1, players2] = game.players;
+console.log(players1);
+console.log(players2);
 
-let bmPlayers = game.players[0];
-let bdPlayers = game.players[1];
-console.log(bmPlayers);
-console.log(bdPlayers);
+//2.
+const [gk, ...fieldPlayers] = players1;
+console.log(gk);
+console.log(fieldPlayers);
+//3.
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
+//4.
